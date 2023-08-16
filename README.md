@@ -47,7 +47,7 @@ Our data-driven approach led us to significant discoveries:
 - `data_collection.ipynb`: A Python notebook detailing the data collection process and initial exploration.
 - `database_setup.sql`: SQL script for creating the structured database schema and linking tables.
 - `eda_analysis.sql`: SQL queries for in-depth exploratory data analysis.
-- `project_description.md`: A comprehensive project description outlining objectives, methodologies, and findings.
+- `README.md`: A comprehensive project description outlining objectives, methodologies, and findings.
 
 ## Conclusion
 

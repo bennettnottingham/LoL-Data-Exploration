@@ -2,43 +2,65 @@
 
 ## Project Overview
 
-Welcome to the League of Legends Spring Split 2023 Data Analysis Project. In this project, we dive deep into the world of competitive League of Legends, leveraging data-driven insights to uncover hidden trends, player performance dynamics, and team strategies. This repository serves as a comprehensive resource for our analysis, bringing together data collection, preparation, and exploratory insights to provide a holistic view of the spring split season.
+Welcome to the League of Legends Spring Split 2023 Data Analysis Project. This repository serves as a comprehensive resource for exploring the intricate world of competitive League of Legends. Our journey encompasses data collection, preparation, and detailed exploratory insights to provide a comprehensive view of the spring split season.
 
 ## Data Collection and Preparation
 
-To embark on this journey, we harnessed the power of Python's Pandas library to meticulously gather and clean the player statistics from Oracle's Elixir API. This allowed us to capture crucial metrics such as win rates, KDA ratios, Kill Participation (KP), Creep Score Per Minute (CSPM), and gold percentages. Once the data was compiled, we seamlessly integrated it into a MySQL database using the provided SQL scripts, creating a robust foundation for our exploration.
+To embark on this project, we harnessed Python's Pandas library to meticulously collect and refine player statistics from Oracle's Elixir API. This comprehensive approach allowed us to capture critical metrics including win rates, KDA ratios, Kill Participation (KP), Creep Score Per Minute (CSPM), and gold percentages. Once the data was compiled, we skillfully integrated it into a MySQL database, enhancing its utility for analysis.
+
+## Database Design
+
+Taking the project a step further, we strategically divided the initial dataset into three distinct tables within the MySQL Workbench: `Players`, `Teams`, and `Stats`. These tables were meticulously interconnected using primary and foreign keys, creating a structured database schema that facilitated seamless data interaction and robust query capabilities.
+
+- `Players`: This table houses individual player data, including their player ID, name, team affiliation, position, games played, and region. Foreign keys link players to their respective teams.
+
+- `Teams`: The teams table aggregates team-related information, containing team names and unique identifiers.
+
+- `Stats`: Here, we centralize the key performance metrics such as win percentage, KDA, KP, CSPM, and gold percentage. This table is linked to players through foreign keys, establishing a strong relationship that allows comprehensive analysis.
 
 ## Exploratory Data Analysis (EDA)
 
-Our investigation delved into every nook and cranny of the dataset, unearthing fascinating insights that illuminate the Spring Split's competitive landscape. We utilized SQL queries to perform a series of EDA steps, including:
+Our exploration into the dataset was guided by detailed SQL queries, leading to invaluable insights:
 
-- **Player Performance Insights**: By dissecting win rates and performance metrics, we were able to identify standout players and positions that consistently made a difference on the Rift. This analysis shed light on key roles and individuals that drove victories.
+- **Player Performance**: Rigorous analysis of win rates, KDA, KP, CSPM, and gold percentages unveiled standout players whose consistent performance contributed to their team's success.
 
-- **Team Dynamics and Comparisons**: Team performance was not left unscrutinized. We assessed win rates, KDA ratios, KP, CSPM, and gold percentages to discern trends among competing teams, unveiling strategic nuances that set them apart.
+- **Team Strategy**: By comparing teams' win rates, KDA, and other metrics, we highlighted strategic differences that set top-performing teams apart.
 
-- **Positional Analysis**: A nuanced examination of player positions unearthed intriguing correlations between roles and performance metrics. We explored how positions influenced win rates, KDA, KP, CSPM, and gold percentages, offering insights into role-specific dynamics.
+- **Positional Dynamics**: Focusing on player positions, we explored how roles correlate with performance metrics, revealing nuanced positional dynamics.
 
-- **Regional Impact**: Our analysis extended beyond teams and players to encompass the global League of Legends scene. We evaluated performance metrics across regions, highlighting areas of dominance and sharing invaluable cross-regional comparisons.
+- **Regional Comparisons**: Analyzing cross-regional performance showcased varying trends and identified regions with impressive statistics.
 
 ## Key Findings and Insights
 
-Our data-driven journey yielded a treasure trove of insights:
+Our data-driven approach led us to significant discoveries:
 
-- **Positional Influence**: The analysis of player positions revealed that certain roles, such as the ADC position, exhibited a remarkable composite score, suggesting their crucial impact on overall team success.
+- **Structured Data Model**: The separation of data into distinct tables enhanced our ability to analyze and draw insights, showcasing the importance of a well-designed database schema.
 
-- **Team Dynamics**: Team performance analysis showcased teams with stellar win rates, high KDA, and efficient KP. These teams exhibited a unique blend of coordinated play and individual skill.
+- **Positional Impact**: Through our analysis, it became evident that certain positions, notably the ADC role, significantly influenced overall team performance.
 
-- **Metric Correlations**: We discovered intriguing correlations between different performance metrics, unveiling intriguing relationships that impact gameplay strategies and decision-making.
+- **Team Synergy**: By connecting player and team data, we highlighted teams that successfully combined individual prowess with cohesive strategies.
 
-- **Regional Supremacy**: Our exploration across different regions underscored the strength of particular locales, indicating potential areas of strategic focus for teams.
+- **Metric Relationships**: Exploring metric correlations opened avenues to understand how different aspects of play interrelate, guiding strategic decisions.
 
 ## Repository Contents
 
-- `LoL_data.ipynb`: A Python notebook detailing the data collection process and initial exploration.
-- `database_setup.sql`: SQL script for creating the database schema and necessary tables.
-- `LoL_analysis.sql`: SQL queries for comprehensive exploratory data analysis.
-- `project_description.md`: A detailed description of the project and its significance.
+- `data_collection.ipynb`: A Python notebook detailing the data collection process and initial exploration.
+- `database_setup.sql`: SQL script for creating the structured database schema and linking tables.
+- `eda_analysis.sql`: SQL queries for in-depth exploratory data analysis.
+- `project_description.md`: A comprehensive project description outlining objectives, methodologies, and findings.
 
 ## Conclusion
 
-The League of Legends Spring Split 2023 Data Analysis Project is a testament to the power of data-driven insights in unraveling the complexities of competitive gaming. Through meticulous data collection, strategic database structuring, and in-depth exploratory analysis, we've shed light on the dynamic world of League of Legends esports. This project invites you to join us in uncovering the intricacies of player performance, team dynamics, and regional dominance, as we endeavor to enhance our understanding of the game we love.
+The League of Legends Spring Split 2023 Data Analysis Project showcases the power of data in unraveling the intricacies of competitive gaming. By meticulously collecting and structuring data, performing rigorous exploratory analysis, and drawing insightful conclusions, we've gained a deeper understanding of player performance, team dynamics, and regional trends within the esports arena. This project encourages fellow enthusiasts to delve into the world of data-driven analysis and uncover the secrets that shape the realm of League of Legends.
+
+## Contact Information
+
+For inquiries, collaborations, or discussions, please feel free to reach out to [Your Name] at [your.email@example.com], or connect with us on [LinkedIn](https://www.linkedin.com/in/yourname).
+
+## License
+
+This project is released under the [MIT License](LICENSE).
+
+---
+
+Please adapt this template to accurately reflect your project's details and accomplishments.

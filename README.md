@@ -52,15 +52,3 @@ Our data-driven approach led us to significant discoveries:
 ## Conclusion
 
 The League of Legends Spring Split 2023 Data Analysis Project showcases the power of data in unraveling the intricacies of competitive gaming. By meticulously collecting and structuring data, performing rigorous exploratory analysis, and drawing insightful conclusions, we've gained a deeper understanding of player performance, team dynamics, and regional trends within the esports arena. This project encourages fellow enthusiasts to delve into the world of data-driven analysis and uncover the secrets that shape the realm of League of Legends.
-
-## Contact Information
-
-For inquiries, collaborations, or discussions, please feel free to reach out to [Your Name] at [your.email@example.com], or connect with us on [LinkedIn](https://www.linkedin.com/in/yourname).
-
-## License
-
-This project is released under the [MIT License](LICENSE).
-
----
-
-Please adapt this template to accurately reflect your project's details and accomplishments.
